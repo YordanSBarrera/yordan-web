@@ -1,5 +1,7 @@
-const App = () => {
-  return <>Hola Yordan</>;
-};
+import MyInformation from "./components/MyInformation";
+
+function App() {
+  return <MyInformation />;
+}
 
 export default App;
