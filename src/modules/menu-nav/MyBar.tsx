@@ -11,9 +11,11 @@ import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import { useEffect, useState } from "react";
 import AppBar from "@mui/material/AppBar";
-import myLogo from "../../assets/img/logo-ysb.png";
+
 import { Stack } from "@mui/material";
 import yordanPhoto from "../../assets/img/yordan.jpg";
+import MyLogo from "./MyLogo";
+import { bgDarkCard } from "../../utils/const";
 
 const pages = ["Proyectos", "Contacto"];
 const settings = ["Sobre mí", "Habilidades", "Proyectos", "Contacto"];
@@ -50,19 +52,18 @@ const MyBar = () => {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const bgBarColor = scrolled ? "#444" : "#000";
+  const bgBarColor = scrolled ? bgDarkCard : "rgb(0,0,0,0.1)";
+
   return (
-    <AppBar position="fixed" color="transparent">
-      <Container maxWidth="lg" sx={{ maxHeight: "100px", bgcolor: bgBarColor }}>
+    <AppBar position="fixed" sx={{ backgroundColor: bgBarColor }}>
+      <Container maxWidth="lg">
         <Toolbar disableGutters>
           <Stack
             component="a"
             href="#home"
             sx={{ display: { xs: "none", md: "flex" }, mr: 1 }}
           >
-            <a href="#home">
-              <img src={myLogo} alt="YSB logo" />
-            </a>
+            <MyLogo />
           </Stack>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -111,7 +112,7 @@ const MyBar = () => {
               flexGrow: 1,
             }}
           >
-            <img src={myLogo} alt="YSB logo" />
+            <MyLogo />
           </Stack>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (

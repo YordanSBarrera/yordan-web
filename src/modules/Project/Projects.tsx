@@ -1,4 +1,5 @@
 import { Box, Button, Grid, Typography } from "@mui/material";
+import { bgTransparenCard } from "../../utils/const";
 
 const Projects = () => {
   return (
@@ -8,7 +9,9 @@ const Projects = () => {
       </Typography>
       <Grid container spacing={2}>
         <Grid item xs={12} md={6}>
-          <Box sx={{ p: 2, backgroundColor: "#e9e9e9", borderRadius: 1 }}>
+          <Box
+            sx={{ p: 2, backgroundColor: bgTransparenCard, borderRadius: 1 }}
+          >
             <Typography variant="h5" component="h3">
               Proyecto 1
             </Typography>
@@ -21,7 +24,9 @@ const Projects = () => {
           </Box>
         </Grid>
         <Grid item xs={12} md={6}>
-          <Box sx={{ p: 2, backgroundColor: "#e9e9e9", borderRadius: 1 }}>
+          <Box
+            sx={{ p: 2, backgroundColor: bgTransparenCard, borderRadius: 1 }}
+          >
             <Typography variant="h5" component="h3">
               Proyecto 2
             </Typography>

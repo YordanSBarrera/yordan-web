@@ -1,11 +1,12 @@
 import { Stack, Typography } from "@mui/material";
+import { bgDarkCard } from "../../utils/const";
 
 const Footer = () => {
   return (
     <Stack
       textAlign="center"
       py={3}
-      bgcolor="#333"
+      bgcolor={bgDarkCard}
       color="#fff"
       borderRadius={1}
     >
