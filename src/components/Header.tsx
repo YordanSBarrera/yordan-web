@@ -1,34 +1,30 @@
-import { Box, Button, Typography } from "@mui/material";
+import { Button, Stack, StackProps, Typography } from "@mui/material";
 
-const Header = () => {
+type HeaderProps = { stackProps?: StackProps };
+const Header = ({ stackProps }: HeaderProps) => {
   return (
-    <>
-      <Box
-        sx={{
-          textAlign: "center",
-          py: 5,
-          backgroundColor: "#0073e6",
-          color: "#fff",
-          borderRadius: 1,
-          mb: 4,
-        }}
+    <Stack
+      textAlign="center"
+      color="#fff"
+      borderRadius="1"
+      bgcolor="#0073e6"
+      {...stackProps}
+    >
+      <Typography variant="h2" component="h1">
+        Hola, soy Yordan
+      </Typography>
+      <Typography variant="h5" component="p" sx={{ mt: 2 }}>
+        Frontend Developer
+      </Typography>
+      <Button
+        variant="contained"
+        color="secondary"
+        href="#projects"
+        sx={{ mt: 3 }}
       >
-        <Typography variant="h2" component="h1">
-          Hola, soy Yordan
-        </Typography>
-        <Typography variant="h5" component="p" sx={{ mt: 2 }}>
-          Frontend Developer
-        </Typography>
-        <Button
-          variant="contained"
-          color="secondary"
-          href="#projects"
-          sx={{ mt: 3 }}
-        >
-          Ver mis proyectos
-        </Button>
-      </Box>
-    </>
+        Ver mis proyectos
+      </Button>
+    </Stack>
   );
 };
 
