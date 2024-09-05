@@ -6,7 +6,7 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 
 const theme = createTheme({
   typography: {
-    fontFamily: "Centra, sans-serif", // Aplica la fuente a todos los textos de MUI
+    fontFamily: "Centra, sans-serif",
   },
 });
 
