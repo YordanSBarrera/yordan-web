@@ -13,6 +13,9 @@ import ts from "../assets/icons/ts.svg";
 import mongo from "../assets/icons/mongodb.svg";
 import mui from "../assets/icons/material-ui.svg";
 import angular from "../assets/icons/angular.svg";
+import emailW from "../assets/icons/email-white.svg";
+import githubW from "../assets/icons/github-white.svg";
+import linkedinW from "../assets/icons/linkedin-white.svg";
 
 const Skills = () => {
   return (
@@ -22,9 +25,11 @@ const Skills = () => {
       </Typography>
       <Stack
         spacing={3}
-        width={"auto"}
+        width={"100%"}
         direction={"row"}
         justifyContent={"center"}
+        sx={{ display: { xs: "none", md: "flex" }, mr: 1 }}
+        flexWrap="wrap"
       >
         <CardTransparent title="Frontend">
           <Stack
@@ -32,6 +37,7 @@ const Skills = () => {
             direction="row"
             justifyContent={"center"}
             alignItems={"center"}
+            flexWrap="wrap"
           >
             <img src={html5} alt="html5" />
             <img src={css} alt="css" />
@@ -44,12 +50,22 @@ const Skills = () => {
             <img src={angular} alt="Angular" height={"43px"} />
           </Stack>
         </CardTransparent>
-
         <CardTransparent title="Otras">
-          <img src={vsc} alt="vsc" />
-          <img src={git} alt="git" />
-          <img src={github} alt="github" />
-          <img src={mongo} alt="MongoDB" />
+          <Stack
+            spacing={3}
+            direction="row"
+            justifyContent={"center"}
+            alignItems={"center"}
+            flexWrap="wrap"
+          >
+            <img src={vsc} alt="vsc" />
+            <img src={git} alt="git" />
+            <img src={github} alt="github" />
+            <img src={mongo} alt="MongoDB" />
+            <img src={emailW} alt="js" height={"35px"} />
+            <img src={linkedinW} alt="js" height={"30px"} />
+            <img src={githubW} alt="js" height={"55px"} />
+          </Stack>
         </CardTransparent>
       </Stack>
     </Stack>

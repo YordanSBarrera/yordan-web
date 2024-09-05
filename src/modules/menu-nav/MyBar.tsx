@@ -16,6 +16,7 @@ import { Stack } from "@mui/material";
 import yordanPhoto from "../../assets/img/yordan.jpg";
 import MyLogo from "./MyLogo";
 import { bgDarkCard } from "../../utils/const";
+import ContactIcons from "../../components/ContactIcons";
 
 const pages = ["Proyectos", "Contacto"];
 const settings = ["Sobre mí", "Habilidades", "Proyectos", "Contacto"];
@@ -125,8 +126,8 @@ const MyBar = () => {
               </Button>
             ))}
           </Box>
-
-          <Box sx={{ flexGrow: 0 }}>
+          <ContactIcons />
+          <Box sx={{ flexGrow: 0 }} ml={3}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                 <Avatar alt="Yordan" src={yordanPhoto} />

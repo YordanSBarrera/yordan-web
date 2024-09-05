@@ -11,9 +11,12 @@ const CardTransparent = ({ title, children }: CardTransparentProps) => {
   return (
     <Card
       sx={{
+        m: 3,
         bgcolor: midleTransparent,
         color: "whitesmoke",
         width: "fit-content",
+        textAlign: "center",
+        xs: "100%",
       }}
     >
       <Typography variant="h5" gutterBottom>

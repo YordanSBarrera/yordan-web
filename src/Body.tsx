@@ -1,4 +1,4 @@
-import { Button, Stack, StackProps } from "@mui/material";
+import { Button, Stack, StackProps, Typography } from "@mui/material";
 import AboutMe from "./modules/aboutMe/AboutMe";
 import Skills from "./components/Skills";
 import Projects from "./modules/Project/Projects";
@@ -12,6 +12,9 @@ const Body = ({ stackProps }: BodyProp) => {
 
   return (
     <Stack {...stackProps}>
+      <Typography variant="h4" component="h2" color="warning" m={1}>
+        Sitio web en Desarrollo...
+      </Typography>
       <Welcome />
       <AboutMe />
       <Skills />
