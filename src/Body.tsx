@@ -19,9 +19,9 @@ const Body = ({ stackProps }: BodyProp) => {
       <Stack alignItems={"center"} spacing={3}>
         <Button
           variant="contained"
-          color="secondary"
+          color="primary"
           href={cv}
-          //   download
+          download
           sx={{ width: "200px" }}
         >
           Descargar CV

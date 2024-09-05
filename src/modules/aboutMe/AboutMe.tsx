@@ -7,9 +7,9 @@ const AboutMe = () => {
         Sobre Mí
       </Typography>
       <Typography variant="body1">
-        Soy un desarrollador frontend con experiencia en HTML, CSS, JavaScript y
-        frameworks como React. Me apasiona crear experiencias de usuario
-        atractivas y funcionales.
+        Soy un desarrollador frontend con experiencia en HTML, CSS, JavaScript,
+        Typescript y frameworks como React. Me apasiona crear experiencias de
+        usuario atractivas y funcionales.
       </Typography>
     </Box>
   );
