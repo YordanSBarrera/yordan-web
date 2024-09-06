@@ -16,7 +16,6 @@ function App() {
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundAttachment: "fixed",
-        Height: "100vh",
         color: "white",
       }}
     >

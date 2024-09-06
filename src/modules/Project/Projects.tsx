@@ -38,7 +38,6 @@ const Projects = () => {
             </Button>
           </Box>
         </Grid>
-        ...
       </Grid>
     </Box>
   );
