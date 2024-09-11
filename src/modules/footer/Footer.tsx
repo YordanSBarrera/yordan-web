@@ -1,6 +1,6 @@
 import { Stack, Typography } from "@mui/material";
 import { bgDarkCard } from "../../utils/const";
-import MyLogo from "../menu-nav/MyLogo";
+import MyLogo from "../../components/MyLogo";
 
 const Footer = () => {
   return (

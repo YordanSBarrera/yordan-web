@@ -14,9 +14,9 @@ import AppBar from "@mui/material/AppBar";
 
 import { Stack } from "@mui/material";
 import yordanPhoto from "../../assets/img/yordan.jpg";
-import MyLogo from "./MyLogo";
 import { bgDarkCard } from "../../utils/const";
 import ContactIcons from "../../components/ContactIcons";
+import MyLogo from "../../components/MyLogo";
 
 const pages = ["Proyectos", "Contacto"];
 const settings = ["Sobre mí", "Habilidades", "Proyectos", "Contacto"];

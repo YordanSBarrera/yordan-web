@@ -1,5 +1,5 @@
 import { Box } from "@mui/material";
-import myLogo from "../../assets/img/logo-ysb.png";
+import myLogo from "@assets/img/logo-ysb.png";
 
 type MyLogoProps = {
   widthProps?: string;
