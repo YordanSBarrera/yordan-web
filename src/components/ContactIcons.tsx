@@ -3,7 +3,11 @@ import emailW from "../assets/icons/email-2.svg";
 import githubW from "../assets/icons/github-2.svg";
 import linkedinW from "../assets/icons/linkedin-2.svg";
 
-const ContactIcons = () => {
+type ContactIconsProps = {
+  heightProps?: string;
+};
+
+const ContactIcons = ({ heightProps = "auto" }: ContactIconsProps) => {
   return (
     <Stack
       alignItems={"baseline"}
@@ -11,6 +15,7 @@ const ContactIcons = () => {
       justifyContent={"center"}
       spacing={2}
       mt={2}
+      height={heightProps}
     >
       <Link href="mailto:yordansaldana8@gmail.com">
         <Box component="img" src={emailW} alt="email" sx={{ height: "35px" }} />
