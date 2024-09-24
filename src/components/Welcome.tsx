@@ -1,5 +1,6 @@
 import { Stack, StackProps, Typography } from "@mui/material";
-import { bgTransparenCard } from "@utils/const";
+import { bgTransparenCard } from "../utils/const";
+// import { bgTransparenCard } from "@utils/const";
 
 type WelcomeProps = { stackProps?: StackProps };
 const Welcome = ({ stackProps }: WelcomeProps) => {

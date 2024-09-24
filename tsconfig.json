@@ -1,25 +1,25 @@
-// "files": [],
-// "references": [
-//   {
-//     "path": "./tsconfig.app.json"
-//   },
-//   {
-//     "path": "./tsconfig.node.json"
-//   }
-// ],
 {
-  "compilerOptions": {
-    "baseUrl": "./src",
-    "paths": {
-      "@components/*": ["./components/*", "./components/"],
-      "@modules/*": ["./modules/*", "./modules/"],
-      "@utils/*": ["./utils/*", "./utils/"],
-      "@assets/*": ["./assets/*", "./assets/"],
-      "@hooks/*": ["./hooks/*", "./hooks/"],
-      "@src/*": ["./*", "./"],
-      "@public/*": ["../public/*,../public/"]
+  "files": [],
+  "references": [
+    {
+      "path": "./tsconfig.app.json"
     },
-    "jsx": "react-jsx"
-  },
-  "include": ["src"]
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ]
+  // "compilerOptions": {
+  //   "baseUrl": "./src",
+  //   "paths": {
+  //     "@components/*": ["./components/*", "./components/"],
+  //     "@modules/*": ["./modules/*", "./modules/"],
+  //     "@utils/*": ["./utils/*", "./utils/"],
+  //     "@assets/*": ["./assets/*", "./assets/"],
+  //     "@hooks/*": ["./hooks/*", "./hooks/"],
+  //     "@src/*": ["./*", "./"],
+  //     "@public/*": ["../public/*,../public/"]
+  //   },
+  //   "jsx": "react-jsx"
+  // },
+  // "include": ["src"]
 }
