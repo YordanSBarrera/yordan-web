@@ -9,7 +9,7 @@ import html5 from "../assets/icons/html5.svg";
 import js from "../assets/icons/javascript.svg";
 import react from "../assets/icons/reaccionar.svg";
 import vsc from "../assets/icons/vsc2019.svg";
-import vite from "../../public/vite.svg";
+import vite from "../assets/icons/vite.svg";
 import ts from "../assets/icons/ts.svg";
 import mongo from "../assets/icons/mongodb.svg";
 import mui from "../assets/icons/material-ui.svg";
