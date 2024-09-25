@@ -126,7 +126,7 @@ const MyBar = () => {
               </Button>
             ))}
           </Box>
-          <ContactIcons />
+          <ContactIcons heightIcons="30px" />
           <Box sx={{ flexGrow: 0 }} ml={3}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>

@@ -5,9 +5,13 @@ import linkedinW from "../assets/icons/linkedin-2.svg";
 
 type ContactIconsProps = {
   heightProps?: string;
+  heightIcons?: string;
 };
 
-const ContactIcons = ({ heightProps = "auto" }: ContactIconsProps) => {
+const ContactIcons = ({
+  heightProps = "auto",
+  heightIcons = "35px",
+}: ContactIconsProps) => {
   return (
     <Stack
       alignItems={"baseline"}
@@ -18,7 +22,12 @@ const ContactIcons = ({ heightProps = "auto" }: ContactIconsProps) => {
       height={heightProps}
     >
       <Link href="mailto:yordansaldana8@gmail.com">
-        <Box component="img" src={emailW} alt="email" sx={{ height: "35px" }} />
+        <Box
+          component="img"
+          src={emailW}
+          alt="email"
+          sx={{ height: heightIcons }}
+        />
       </Link>
 
       <Link href="https://github.com/YordanSBarrera" target="_blank" mt={2}>
@@ -26,7 +35,7 @@ const ContactIcons = ({ heightProps = "auto" }: ContactIconsProps) => {
           component="img"
           src={githubW}
           alt="github"
-          sx={{ height: "35px" }}
+          sx={{ height: heightIcons }}
         />
       </Link>
 
@@ -39,7 +48,7 @@ const ContactIcons = ({ heightProps = "auto" }: ContactIconsProps) => {
             component="img"
             src={linkedinW}
             alt="linkedin"
-            sx={{ height: "35px" }}
+            sx={{ height: heightIcons }}
           />
         </Link>
       </Box>
