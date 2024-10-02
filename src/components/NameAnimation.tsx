@@ -55,7 +55,22 @@ const NameAnimation = () => {
 
   return (
     <Box>
-      <Typography variant="h2" component="h1">
+      <Typography
+        variant="h2"
+        component="h1"
+        style={{
+          // fontsize=: 65px;
+          // font-weight: 700;
+          // letter-spacing: 0.8px;
+          // line-height: 1;
+          // margin-bottom: 20px;
+          // display: block;
+          fontSize: "65px",
+          fontWeight: 700,
+          lineHeight: 1,
+          display: "block",
+        }}
+      >
         Hola soy Yordan Saldaña
       </Typography>
       <br />
@@ -64,7 +79,11 @@ const NameAnimation = () => {
         component="span"
         className="txt-rotate"
         data-rotate={toRotate}
-        style={{ textWrap: "wrap" }}
+        style={{
+          textWrap: "wrap",
+          fontSize: "55px",
+          fontWeight: 500,
+        }}
       >
         {` ${text}`}
       </Typography>
