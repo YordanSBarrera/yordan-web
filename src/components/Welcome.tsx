@@ -3,7 +3,6 @@ import NameAnimation from "./NameAnimation";
 import FigureAnimation from "./FigureAnimation";
 import Grid from "@mui/material/Grid2";
 import { Stack, Typography } from "@mui/material";
-import AboutMe from "../modules/aboutMe/AboutMe";
 
 const Welcome = () => {
   return (
