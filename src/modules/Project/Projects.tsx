@@ -1,9 +1,9 @@
 import { Box, Button, Grid, Typography } from "@mui/material";
-import { bgTransparenCard } from "../../utils/const";
+import { bgTransparenCard, linkProject } from "../../utils/const";
 
 const Projects = () => {
   return (
-    <Box id="projects" sx={{ mb: 4 }}>
+    <Box id={linkProject} sx={{ mb: 4 }}>
       <Typography variant="h4" component="h2" gutterBottom>
         Proyectos
       </Typography>

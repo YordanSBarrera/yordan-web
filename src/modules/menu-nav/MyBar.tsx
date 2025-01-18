@@ -11,13 +11,11 @@ import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import { useEffect, useState } from "react";
 import AppBar from "@mui/material/AppBar";
-
 import { Stack } from "@mui/material";
 import yordanPhoto from "../../assets/img/yordan.jpg";
-import { bgDarkCard } from "../../utils/const";
+import { bgDarkCard, linkHome } from "../../utils/const";
 import ContactIcons from "../../components/ContactIcons";
 import MyLogo from "../../components/MyLogo";
-
 const pages = ["Proyectos", "Contacto"];
 const settings = ["Sobre mí", "Habilidades", "Proyectos", "Contacto"];
 
@@ -61,7 +59,7 @@ const MyBar = () => {
         <Toolbar disableGutters>
           <Stack
             component="a"
-            href="#home"
+            href={linkHome}
             sx={{ display: { xs: "none", md: "flex" }, mr: 1 }}
           >
             <MyLogo />
@@ -107,7 +105,7 @@ const MyBar = () => {
 
           <Stack
             component="a"
-            href="#home"
+            href={linkHome}
             sx={{
               display: { xs: "flex", md: "none" },
               flexGrow: 1,
