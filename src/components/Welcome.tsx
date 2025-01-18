@@ -1,4 +1,4 @@
-import { bgTransparenCard } from "../utils/const";
+import { bgTransparenCard, linkHome } from "../utils/const";
 import NameAnimation from "./NameAnimation";
 import FigureAnimation from "./FigureAnimation";
 import Grid from "@mui/material/Grid2";
@@ -6,7 +6,7 @@ import { Stack, Typography } from "@mui/material";
 
 const Welcome = () => {
   return (
-    <Grid container spacing={2} sx={{ id: "home" }} size={12}>
+    <Grid container spacing={2} sx={{ id: "home" }} size={12} id={linkHome}>
       <Grid
         size={{ xs: 12, md: 6, xl: 7 }}
         textAlign="center"
