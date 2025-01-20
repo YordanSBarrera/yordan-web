@@ -4,6 +4,8 @@ import backgroung from "./assets/img/bg-space.png";
 import Body from "./Body";
 import MyBar from "./modules/menu-nav/MyBar";
 import Footer from "./modules/footer/Footer";
+import { Route, Routes } from "react-router-dom";
+import AboutMe from "./modules/aboutMe/AboutMe";
 
 function App() {
   return (
@@ -21,7 +23,11 @@ function App() {
     >
       <Container>
         <MyBar />
-        <Body stackProps={{ mt: 10 }} />
+        <Routes>
+          <Route path="/yordan-web/" element={<App />} />
+          <Route path="/" element={<Body stackProps={{ mt: 10 }} />} />
+          <Route path="/yordan-web/about" element={<AboutMe />} />
+        </Routes>
         <Footer />
       </Container>
     </Stack>
