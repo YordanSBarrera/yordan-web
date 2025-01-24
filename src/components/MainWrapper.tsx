@@ -1,4 +1,4 @@
-import { Container, Stack } from "@mui/material";
+import { Container, Stack, Typography } from "@mui/material";
 import { ReactNode } from "react";
 import MyBar from "../modules/menu-nav/MyBar";
 import Footer from "../modules/footer/Footer";
@@ -20,18 +20,21 @@ const MainWrapper = ({ children }: MainWrapperProps) => {
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundAttachment: "fixed",
-
         color: "white",
+        minHeight: "100vh",
       }}
     >
       <Container>
         <Stack alignSelf="flex-start">
           <MyBar />
         </Stack>
-        <Stack width="100vh" justifyContent="center">
+        <Stack width="100vh" justifyContent="center" mt="90px" mb="60px">
+          <Typography variant="h4" component="h2" color="warning">
+            Sitio web en Desarrollo...
+          </Typography>
           {children}
         </Stack>
-        <Stack alignSelf="end">
+        <Stack position="fixed" width="100%" bottom={0}>
           <Footer />
         </Stack>
       </Container>
