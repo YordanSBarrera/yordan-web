@@ -1,4 +1,4 @@
-import { Button, Stack, StackProps, Typography } from "@mui/material";
+import { Stack, StackProps, Typography } from "@mui/material";
 import AboutMe from "./modules/aboutMe/AboutMe";
 import Skills from "./components/Skills";
 import Projects from "./modules/Project/Projects";
@@ -8,10 +8,8 @@ import Welcome from "./components/Welcome";
 type BodyProp = { stackProps?: StackProps };
 
 const Body = ({ stackProps }: BodyProp) => {
-  const cv = "/yordan-web/docs/Yordan_CV_2024_ES_.pdf";
-
   return (
-    <Stack {...stackProps}>
+    <Stack {...stackProps} spacing={3} justifyContent="center">
       <Typography variant="h4" component="h2" color="warning" m={1}>
         Sitio web en Desarrollo...
       </Typography>
@@ -19,17 +17,6 @@ const Body = ({ stackProps }: BodyProp) => {
       <AboutMe />
       <Skills />
       <Projects />
-      <Stack alignItems={"center"} spacing={3}>
-        <Button
-          variant="contained"
-          color="primary"
-          href={cv}
-          download
-          sx={{ width: "200px" }}
-        >
-          Descargar CV
-        </Button>
-      </Stack>
       <Contact />
     </Stack>
   );

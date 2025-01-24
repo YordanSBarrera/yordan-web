@@ -2,7 +2,10 @@ import { Box, Typography } from "@mui/material";
 
 const AboutMe = () => {
   return (
-    <Box id="about" sx={{ mb: 4 }}>
+    <Box
+      id="about"
+      //  sx={{ mb: 4 }}
+    >
       <Typography variant="h4" component="h2" gutterBottom>
         Sobre Mí
       </Typography>
