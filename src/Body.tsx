@@ -14,7 +14,7 @@ const Body = ({ stackProps }: BodyProp) => {
       <AboutMe />
       <Skills />
       <Projects />
-      <Contact /> <Contact />
+      <Contact />
     </Stack>
   );
 };

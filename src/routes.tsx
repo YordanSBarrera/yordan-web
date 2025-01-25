@@ -2,7 +2,6 @@ import { Route, Routes } from "react-router-dom";
 import AboutMe from "./modules/aboutMe/AboutMe";
 import Body from "./Body";
 import Projects from "./modules/Project/Projects";
-import App from "./App";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 
@@ -16,7 +15,7 @@ export const contactRoute = rootRoute + "contact";
 const MyRoutes = () => {
   return (
     <Routes>
-      <Route path={rootRoute} element={<App />} />
+      <Route path={rootRoute} element={<Body stackProps={{ mt: 10 }} />} />
       <Route path={homeRoute} element={<Body stackProps={{ mt: 10 }} />} />
       <Route path={projectRoute} element={<Projects />} />
       <Route path={aboutRoute} element={<AboutMe />} />
