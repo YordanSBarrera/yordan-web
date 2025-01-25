@@ -28,7 +28,7 @@ const MainWrapper = ({ children }: MainWrapperProps) => {
         <Stack alignSelf="flex-start">
           <MyBar />
         </Stack>
-        <Stack width="100vh" justifyContent="center" mt="90px" mb="60px">
+        <Stack width="100%" justifyContent="center" mt="90px" mb="60px">
           <Typography variant="h4" component="h2" color="warning">
             Sitio web en Desarrollo...
           </Typography>

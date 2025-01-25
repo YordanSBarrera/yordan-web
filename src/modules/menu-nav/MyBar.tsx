@@ -6,18 +6,34 @@ import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Avatar from "@mui/material/Avatar";
-import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import { useEffect, useState } from "react";
 import AppBar from "@mui/material/AppBar";
-import { Stack } from "@mui/material";
+import { Grid2, Stack } from "@mui/material";
 import yordanPhoto from "../../assets/img/yordan.jpg";
-import { bgDarkCard, linkHome } from "../../utils/const";
+import { bgDarkCard } from "../../utils/const";
 import ContactIcons from "../../components/ContactIcons";
 import MyLogo from "../../components/MyLogo";
-const pages = ["Proyectos", "Contacto"];
-const settings = ["Sobre mí", "Habilidades", "Proyectos", "Contacto"];
+import {
+  aboutRoute,
+  contactRoute,
+  homeRoute,
+  projectRoute,
+  skillRoute,
+} from "../../routes";
+import { NavLink } from "react-router-dom";
+
+const pages = [
+  { name: "Proyectos", link: projectRoute },
+  { name: "Contacto", link: contactRoute },
+];
+const settings = [
+  { name: "Sobre mí", link: aboutRoute },
+  { name: "Habilidades", link: skillRoute },
+  { name: "Proyectos", link: projectRoute },
+  { name: "Contacto", link: contactRoute },
+];
 
 const MyBar = () => {
   const [anchorElNav, setAnchorElNav] = useState<null | HTMLElement>(null);
@@ -57,12 +73,10 @@ const MyBar = () => {
     <AppBar position="fixed" sx={{ backgroundColor: bgBarColor }}>
       <Container maxWidth="lg">
         <Toolbar disableGutters>
-          <Stack
-            component="a"
-            href={linkHome}
-            sx={{ display: { xs: "none", md: "flex" }, mr: 1 }}
-          >
-            <MyLogo />
+          <Stack sx={{ display: { xs: "none", md: "flex" }, mr: 1 }}>
+            <NavLink to={homeRoute}>
+              <MyLogo />
+            </NavLink>
           </Stack>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -96,33 +110,37 @@ const MyBar = () => {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                <MenuItem key={page.name} onClick={handleCloseNavMenu}>
+                  <NavLink to={page.link} key={page.name}>
+                    <Typography textAlign="center" color="black">
+                      {page.name}
+                    </Typography>
+                  </NavLink>
                 </MenuItem>
               ))}
             </Menu>
           </Box>
 
           <Stack
-            component="a"
-            href={linkHome}
             sx={{
               display: { xs: "flex", md: "none" },
               flexGrow: 1,
             }}
           >
-            <MyLogo />
+            <NavLink to={homeRoute}>
+              <MyLogo />
+            </NavLink>
           </Stack>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-            {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "white", display: "block" }}
-              >
-                {page}
-              </Button>
-            ))}
+            <Grid2 container columnSpacing={1}>
+              {pages.map((page) => (
+                <Grid2 gap={2}>
+                  <NavLink to={page.link} key={page.name}>
+                    <Typography color="white">{page.name}</Typography>
+                  </NavLink>
+                </Grid2>
+              ))}
+            </Grid2>
           </Box>
           <ContactIcons heightIcons="30px" />
           <Box sx={{ flexGrow: 0 }} ml={3}>
@@ -148,8 +166,10 @@ const MyBar = () => {
               onClose={handleCloseUserMenu}
             >
               {settings.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{setting}</Typography>
+                <MenuItem key={setting.name} onClick={handleCloseUserMenu}>
+                  <NavLink to={setting.link}>
+                    <Typography textAlign="center">{setting.name}</Typography>
+                  </NavLink>
                 </MenuItem>
               ))}
             </Menu>

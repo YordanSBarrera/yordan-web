@@ -1,16 +1,18 @@
 import { Box } from "@mui/material";
 import myLogo from "../assets/img/logo-ysb.png";
-import { linkHome } from "../utils/const";
-// "@assets/img/logo-ysb.png";
+import { homeRoute } from "../routes";
+import { NavLink } from "react-router-dom";
 
 type MyLogoProps = {
   widthProps?: string;
   linkTo?: string;
 };
-const MyLogo = ({ widthProps = "150px", linkTo = linkHome }: MyLogoProps) => {
+const MyLogo = ({ widthProps = "150px", linkTo = homeRoute }: MyLogoProps) => {
   return (
-    <Box component="a" href={linkTo}>
-      <img src={myLogo} alt="YSB logo" width={widthProps} />
+    <Box>
+      <NavLink to={linkTo}>
+        <img src={myLogo} alt="YSB logo" width={widthProps} />
+      </NavLink>
     </Box>
   );
 };
