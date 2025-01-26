@@ -1,11 +1,14 @@
 import { Box, Button, Grid, Typography } from "@mui/material";
 import { bgTransparenCard } from "../../utils/const";
+import { useTranslation } from "react-i18next";
 
 const Projects = () => {
+  const { t } = useTranslation(["lang"]);
+
   return (
     <Box>
       <Typography variant="h4" component="h2" gutterBottom>
-        Proyectos
+        {t("MyFullName")}
       </Typography>
       <Grid container spacing={2}>
         <Grid item xs={12} md={6}>

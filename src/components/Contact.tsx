@@ -1,21 +1,21 @@
 import { Box, Button, Container, Stack, Typography } from "@mui/material";
 import ContactIcons from "./ContactIcons";
+import { useTranslation } from "react-i18next";
+import i18next from "i18next";
 
 const Contact = () => {
+  const { t } = useTranslation(["lang"]);
   const cv = "/yordan-web/docs/Yordan_CV_2024_ES_.pdf";
 
   return (
-    <Box
-      id="contact"
-      //  sx={{ mb: 4 }}
-    >
+    <Box>
       <Container>
         <Typography variant="h4" component="h2" gutterBottom>
-          Contacto
+          Contacto {i18next.t("key")}
         </Typography>
 
         <Typography variant="body1">
-          Puedes contactarme a través de las siguientes plataformas:
+          {t("youCanContactMeThroughThe")}
         </Typography>
         <ContactIcons />
         <Stack alignItems={"center"} mt={2}>
