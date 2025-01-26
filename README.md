@@ -15,4 +15,4 @@ In the project directory, you can run:
 
 `yarn install`
 
-`yarn dev`
+`yarn run dev`
