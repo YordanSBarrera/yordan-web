@@ -1,19 +1,14 @@
 import { Box, Typography } from "@mui/material";
+import { useTranslation } from "react-i18next";
 
 const AboutMe = () => {
+  const { t } = useTranslation();
   return (
-    <Box
-      id="about"
-      //  sx={{ mb: 4 }}
-    >
+    <Box>
       <Typography variant="h4" component="h2" gutterBottom>
-        Sobre Mí
+        {t("aboutMe")}
       </Typography>
-      <Typography variant="body1">
-        Soy un desarrollador frontend con experiencia en HTML, CSS, JavaScript,
-        Typescript y frameworks como React. Me apasiona crear experiencias de
-        usuario atractivas y funcionales.
-      </Typography>
+      <Typography variant="body1">{t("descriptionResume")}</Typography>
     </Box>
   );
 };

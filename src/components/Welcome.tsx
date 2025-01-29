@@ -3,8 +3,10 @@ import NameAnimation from "./NameAnimation";
 import FigureAnimation from "./FigureAnimation";
 import Grid from "@mui/material/Grid2";
 import { Stack, Typography } from "@mui/material";
+import { useTranslation } from "react-i18next";
 
 const Welcome = () => {
+  const { t } = useTranslation();
   return (
     <Grid container spacing={2} size={12}>
       <Grid
@@ -16,11 +18,7 @@ const Welcome = () => {
       >
         <Stack>
           <NameAnimation />
-          <Typography variant="body1">
-            Soy un desarrollador frontend con experiencia en HTML, CSS,
-            JavaScript, Typescript y frameworks como React. Me apasiona crear
-            experiencias de usuario atractivas y funcionales.
-          </Typography>
+          <Typography variant="body1">{t("descriptionResume")}</Typography>
         </Stack>
       </Grid>
       <Grid size={{ xs: 12, md: 6, xl: 5 }}>

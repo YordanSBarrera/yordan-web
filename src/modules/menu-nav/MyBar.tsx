@@ -23,22 +23,24 @@ import {
   skillRoute,
 } from "../../routes";
 import { NavLink } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const pages = [
-  { name: "Proyectos", link: projectRoute },
-  { name: "Contacto", link: contactRoute },
+  { name: "projects", link: projectRoute },
+  { name: "contact", link: contactRoute },
 ];
 const settings = [
-  { name: "Sobre mí", link: aboutRoute },
-  { name: "Habilidades", link: skillRoute },
-  { name: "Proyectos", link: projectRoute },
-  { name: "Contacto", link: contactRoute },
+  { name: "aboutMe", link: aboutRoute },
+  { name: "skills", link: skillRoute },
+  { name: "projects", link: projectRoute },
+  { name: "contact", link: contactRoute },
 ];
 
 const MyBar = () => {
   const [anchorElNav, setAnchorElNav] = useState<null | HTMLElement>(null);
   const [anchorElUser, setAnchorElUser] = useState<null | HTMLElement>(null);
   const [scrolled, setScrolled] = useState(false);
+  const { t } = useTranslation();
 
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorElNav(event.currentTarget);
@@ -113,7 +115,7 @@ const MyBar = () => {
                 <MenuItem key={page.name} onClick={handleCloseNavMenu}>
                   <NavLink to={page.link} key={page.name}>
                     <Typography textAlign="center" color="black">
-                      {page.name}
+                      {t(page.name)}
                     </Typography>
                   </NavLink>
                 </MenuItem>
@@ -136,7 +138,7 @@ const MyBar = () => {
               {pages.map((page) => (
                 <Grid2 gap={2}>
                   <NavLink to={page.link} key={page.name}>
-                    <Typography color="white">{page.name}</Typography>
+                    <Typography color="white">{t(page.name)}</Typography>
                   </NavLink>
                 </Grid2>
               ))}
@@ -168,7 +170,9 @@ const MyBar = () => {
               {settings.map((setting) => (
                 <MenuItem key={setting.name} onClick={handleCloseUserMenu}>
                   <NavLink to={setting.link}>
-                    <Typography textAlign="center">{setting.name}</Typography>
+                    <Typography textAlign="center">
+                      {t(setting.name)}
+                    </Typography>
                   </NavLink>
                 </MenuItem>
               ))}
