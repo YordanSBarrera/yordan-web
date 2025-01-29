@@ -4,7 +4,7 @@ import App from "./App.tsx";
 import "./styles/index.css";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { BrowserRouter } from "react-router";
-import "./config/i18next.config.ts";
+import "./config/i18next";
 
 const theme = createTheme({
   typography: {

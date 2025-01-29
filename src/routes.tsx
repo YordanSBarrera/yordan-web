@@ -21,6 +21,7 @@ const MyRoutes = () => {
       <Route path={aboutRoute} element={<AboutMe />} />
       <Route path={skillRoute} element={<Skills />} />
       <Route path={contactRoute} element={<Contact />} />
+      <Route path="/" element={<Body />} />
     </Routes>
   );
 };
