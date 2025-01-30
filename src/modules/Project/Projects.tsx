@@ -1,46 +1,55 @@
-import { Box, Button, Grid, Typography } from "@mui/material";
-import { bgTransparenCard } from "../../utils/const";
+import { Box, Typography } from "@mui/material";
+import Grid from "@mui/material/Grid2";
 import { useTranslation } from "react-i18next";
+import ProjectGridCard from "./ProjectGridCard";
+import medisproutImg from "../../assets/img/calendarMedisprout.webp";
+import ecomerceImg from "../../assets/img/project-eCommerce500x320.webp";
 
 const Projects = () => {
-  const { t } = useTranslation(["lang"]);
+  const { t } = useTranslation();
 
   return (
     <Box>
       <Typography variant="h4" component="h2" gutterBottom>
-        {t("MyFullName")}
+        {t("projects")}
       </Typography>
       <Grid container spacing={2}>
-        <Grid item xs={12} md={6}>
-          <Box
-            sx={{ p: 2, backgroundColor: bgTransparenCard, borderRadius: 1 }}
-          >
-            <Typography variant="h5" component="h3">
-              Proyecto 1
-            </Typography>
-            <Typography variant="body1" sx={{ mt: 1 }}>
-              Descripción breve del proyecto.
-            </Typography>
-            <Button variant="contained" color="primary" sx={{ mt: 2 }}>
-              Ver más
-            </Button>
-          </Box>
-        </Grid>
-        <Grid item xs={12} md={6}>
-          <Box
-            sx={{ p: 2, backgroundColor: bgTransparenCard, borderRadius: 1 }}
-          >
-            <Typography variant="h5" component="h3">
-              Proyecto 2
-            </Typography>
-            <Typography variant="body1" sx={{ mt: 1 }}>
-              Descripción breve del proyecto.
-            </Typography>
-            <Button variant="contained" color="primary" sx={{ mt: 2 }}>
-              Ver más
-            </Button>
-          </Box>
-        </Grid>
+        <ProjectGridCard
+          cardName={t("medisprout")}
+          imgSrc={medisproutImg}
+          imgAlt={t("medisproutAppImg")}
+          projectDescription={t("medisproutDetail")}
+          buttonAction={() => {
+            console.log("ver mas");
+          }}
+        />
+        <ProjectGridCard
+          cardName={t("ecomerce")}
+          imgSrc={ecomerceImg}
+          imgAlt={t("ecomerce")}
+          projectDescription={t("coreanHouseDetail")}
+          buttonAction={() => {
+            console.log("ver mas");
+          }}
+        />
+        <ProjectGridCard
+          cardName={t("medisprout")}
+          imgSrc={medisproutImg}
+          imgAlt={t("medisproutAppImg")}
+          projectDescription={t("medisproutDetail")}
+          buttonAction={() => {
+            console.log("ver mas");
+          }}
+        />
+        <ProjectGridCard
+          cardName={t("medisprout")}
+          imgSrc={medisproutImg}
+          imgAlt={t("medisproutAppImg")}
+          projectDescription={t("medisproutDetail")}
+          buttonAction={() => {
+            console.log("ver mas");
+          }}
+        />
       </Grid>
     </Box>
   );
