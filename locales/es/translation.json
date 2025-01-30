@@ -4,5 +4,14 @@
   "footer": "&copy; 2025 Yordan SB. Todos los derechos reservados.",
   "projects": "Proyectos",
   "contact": "Contacto",
-  "skills": "Habilidades"
+  "skills": "Habilidades",
+  "spain": "Español",
+  "english": "Ingles",
+  "spainFlag": "Bandera de España",
+  "usaFlag": "Bandera de Estados Unidos",
+  "changeLng": "Cambiar Idioma",
+  "openSettings": "Acceder al menú",
+  "youCanContactMeThroughThe": "Puedes contactarme a través de las siguientes plataformas",
+  "downloadCV": "Descargar CV",
+  "webSiteInDeveloment": "Sitio web en Desarrollo..."
 }

@@ -1,5 +1,18 @@
 {
   "descriptionResume": "I am a frontend developer with experience in HTML, CSS, JavaScript, Typescript and frameworks like React. I am passionate about creating engaging and functional user experiences.",
   "aboutMe": "About me",
-  "footer": "&copy; 2025 Yordan SB. All rights reserved."
+  "footer": "&copy; 2025 Yordan SB. All rights reserved.",
+
+  "projects": "Projects",
+  "contact": "Contact",
+  "skills": "Skills",
+  "spain": "Spanish",
+  "english": "English",
+  "spainFlag": "Flag of Spain",
+  "usaFlag": "Flag of United States",
+  "changeLng": "Change language",
+  "openSettings": "Open settings",
+  "youCanContactMeThroughThe": "You can contact me through the following platforms",
+  "downloadCV": "Download CV",
+  "webSiteInDeveloment": "Web site in Develoment"
 }
