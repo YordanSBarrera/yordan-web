@@ -153,7 +153,7 @@ const MyBar = () => {
             <ChangeLang />
           </Box>
           <Box sx={{ flexGrow: 0 }} ml={3}>
-            <Tooltip title="Open settings">
+            <Tooltip title={t("openSettings")}>
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                 <Avatar alt="Yordan" src={yordanPhoto} />
               </IconButton>

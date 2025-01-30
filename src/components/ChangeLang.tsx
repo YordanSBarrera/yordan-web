@@ -44,12 +44,12 @@ const ChangeLang = () => {
         anchorEl={anchorEl}
         anchorOrigin={{
           vertical: "top",
-          horizontal: "right",
+          horizontal: "left",
         }}
         keepMounted
         transformOrigin={{
           vertical: "top",
-          horizontal: "right",
+          horizontal: "left",
         }}
         open={Boolean(anchorEl)}
         onClose={handleCloseMenu}

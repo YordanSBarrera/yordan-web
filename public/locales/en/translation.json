@@ -10,5 +10,9 @@
   "english": "English",
   "spainFlag": "Flag of Spain",
   "usaFlag": "Flag of United States",
-  "changeLng": "Change language"
+  "changeLng": "Change language",
+  "openSettings": "Open settings",
+  "youCanContactMeThroughThe": "You can contact me through the following platforms",
+  "downloadCV": "Download CV",
+  "webSiteInDeveloment": "Web site in Develoment"
 }
