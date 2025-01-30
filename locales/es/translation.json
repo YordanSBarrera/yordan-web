@@ -13,5 +13,11 @@
   "openSettings": "Acceder al menú",
   "youCanContactMeThroughThe": "Puedes contactarme a través de las siguientes plataformas",
   "downloadCV": "Descargar CV",
-  "webSiteInDeveloment": "Sitio web en Desarrollo..."
+  "webSiteInDeveloment": "Sitio web en Desarrollo...",
+  "medisprout": "Medisprout",
+  "medisproutAppImg": "Medisprout App Img",
+  "viewMore": "Ver más",
+  "medisproutDetail": "Medisprout es una plataforma digital especializada en marketing médico y gestión de consultorios.",
+  "ecomerce": "E-comerce",
+  "coreanHouseDetail": "La Casa Coreana. Ecomerce desarrollado con React, Redux"
 }
