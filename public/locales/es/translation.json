@@ -4,5 +4,10 @@
   "footer": "&copy; 2025 Yordan SB. Todos los derechos reservados.",
   "projects": "Proyectos",
   "contact": "Contacto",
-  "skills": "Habilidades"
+  "skills": "Habilidades",
+  "spain": "Español",
+  "english": "Ingles",
+  "spainFlag": "Bandera de España",
+  "usaFlag": "Bandera de Estados Unidos",
+  "changeLng": "Cambiar Idioma"
 }

@@ -1,9 +1,9 @@
-import { Box, Link, Stack } from "@mui/material";
+import { Box, Link, Stack, StackProps } from "@mui/material";
 import emailW from "../assets/icons/email-2.svg";
 import githubW from "../assets/icons/github-2.svg";
 import linkedinW from "../assets/icons/linkedin-2.svg";
 
-type ContactIconsProps = {
+type ContactIconsProps = StackProps & {
   heightProps?: string;
   heightIcons?: string;
 };
@@ -11,6 +11,7 @@ type ContactIconsProps = {
 const ContactIcons = ({
   heightProps = "auto",
   heightIcons = "35px",
+  ...stackprops
 }: ContactIconsProps) => {
   return (
     <Stack
@@ -20,6 +21,7 @@ const ContactIcons = ({
       spacing={2}
       mt={2}
       height={heightProps}
+      {...stackprops}
     >
       <Link href="mailto:yordansaldana8@gmail.com">
         <Box

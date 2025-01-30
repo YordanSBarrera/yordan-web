@@ -24,6 +24,8 @@ import {
 } from "../../routes";
 import { NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { useMediaQuery } from "react-responsive";
+import ChangeLang from "../../components/ChangeLang";
 
 const pages = [
   { name: "projects", link: projectRoute },
@@ -41,6 +43,7 @@ const MyBar = () => {
   const [anchorElUser, setAnchorElUser] = useState<null | HTMLElement>(null);
   const [scrolled, setScrolled] = useState(false);
   const { t } = useTranslation();
+  const littleScreen = useMediaQuery({ minWidth: "500px" });
 
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorElNav(event.currentTarget);
@@ -144,7 +147,11 @@ const MyBar = () => {
               ))}
             </Grid2>
           </Box>
-          <ContactIcons heightIcons="30px" />
+
+          {littleScreen && <ContactIcons heightIcons="30px" />}
+          <Box alignItems="center" mt={2} ml={2}>
+            <ChangeLang />
+          </Box>
           <Box sx={{ flexGrow: 0 }} ml={3}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
