@@ -28,18 +28,12 @@ const Projects = () => {
           imgSrc={ecomerceImg}
           imgAlt={t("ecomerce")}
           projectDescription={t("coreanHouseDetail")}
-          buttonAction={() => {
-            console.log("ver mas");
-          }}
         />
         <ProjectGridCard
           cardName={t("medisprout")}
           imgSrc={medisproutImg}
           imgAlt={t("medisproutAppImg")}
           projectDescription={t("medisproutDetail")}
-          buttonAction={() => {
-            console.log("ver mas");
-          }}
         />
         <ProjectGridCard
           cardName={t("medisprout")}
