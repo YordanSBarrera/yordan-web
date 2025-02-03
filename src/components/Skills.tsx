@@ -17,23 +17,25 @@ import angular from "../assets/icons/angular.svg";
 import emailW from "../assets/icons/email-white.svg";
 import githubW from "../assets/icons/github-white.svg";
 import linkedinW from "../assets/icons/linkedin-white.svg";
+import { useTranslation } from "react-i18next";
 
 const Skills = () => {
+  const { t } = useTranslation();
+
   return (
     <Stack id="skills" width={"auto"}>
       <Typography variant="h4" component="h2" gutterBottom>
-        Habilidades
+        {t("skills")}
       </Typography>
       <Stack
         spacing={5}
         width={"100%"}
         direction={"row"}
         justifyContent={"center"}
-        sx={{ display: { xs: "none", md: "flex" }, mr: 1 }}
+        sx={{ display: { xs: "none", md: "flex" } }}
         flexWrap="wrap"
-        border="1px solid red"
       >
-        <CardTransparent title="Frontend">
+        <CardTransparent title="Front-end">
           <Stack
             direction="row"
             justifyContent={"center"}
@@ -51,7 +53,7 @@ const Skills = () => {
             <img src={angular} alt="Angular" height={"43px"} />
           </Stack>
         </CardTransparent>
-        <CardTransparent title="Otras">
+        <CardTransparent title={t("others")}>
           <Stack
             spacing={3}
             direction="row"
