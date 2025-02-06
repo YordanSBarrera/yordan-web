@@ -23,51 +23,51 @@ const Skills = () => {
   const { t } = useTranslation();
 
   return (
-    <Stack id="skills" width={"auto"}>
+    <Stack width={"auto"} spacing={3} alignItems="center" alignContent="center">
       <Typography variant="h4" component="h2" gutterBottom>
         {t("skills")}
       </Typography>
       <Stack
         spacing={5}
-        width={"100%"}
-        direction={"row"}
-        justifyContent={"center"}
-        sx={{ display: { xs: "none", md: "flex" } }}
+        width="100%"
+        justifyContent="center"
+        display="flex"
         flexWrap="wrap"
       >
         <CardTransparent title="Front-end">
           <Stack
             direction="row"
-            justifyContent={"center"}
-            alignItems={"center"}
+            justifyContent="center"
+            alignItems="center"
             flexWrap="wrap"
+            spacing={3}
           >
             <img src={html5} alt="html5" />
             <img src={css} alt="css" />
             <img src={js} alt="js" />
             <img src={ts} alt="typescript" />
-            <img src={react} alt="react" />{" "}
-            <img src={mui} alt="Material UI" height={"38px"} />
+            <img src={react} alt="react" />
+            <img src={mui} alt="Material UI" height="38px" />
             <img src={bootstrap} alt="bootstrap" />
-            <img src={vite} alt="vite" height={"40px"} />
-            <img src={angular} alt="Angular" height={"43px"} />
+            <img src={vite} alt="vite" height="40px" />
+            <img src={angular} alt="Angular" height="43px" />
           </Stack>
         </CardTransparent>
         <CardTransparent title={t("others")}>
           <Stack
             spacing={3}
             direction="row"
-            justifyContent={"center"}
-            alignItems={"center"}
+            justifyContent="center"
+            alignItems="center"
             flexWrap="wrap"
           >
             <img src={vsc} alt="vsc" />
             <img src={git} alt="git" />
             <img src={github} alt="github" />
             <img src={mongo} alt="MongoDB" />
-            <img src={emailW} alt="js" height={"35px"} />
-            <img src={linkedinW} alt="js" height={"30px"} />
-            <img src={githubW} alt="js" height={"55px"} />
+            <img src={emailW} alt="js" height="35px" />
+            <img src={linkedinW} alt="js" height="30px" />
+            <img src={githubW} alt="js" height="55px" />
           </Stack>
         </CardTransparent>
       </Stack>

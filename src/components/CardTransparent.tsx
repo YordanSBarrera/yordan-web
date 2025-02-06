@@ -7,14 +7,12 @@ type CardTransparentProps = {
 };
 
 const CardTransparent = ({ title, children }: CardTransparentProps) => {
-  const midleTransparent = "rgb(255,255,255,0.3)";
+  const midleTransparent = "rgb(255,255,255,0.1)";
   return (
     <Card
       sx={{
-        m: 3,
         bgcolor: midleTransparent,
         color: "whitesmoke",
-        width: "fit-content",
         textAlign: "center",
         xs: "100%",
       }}
