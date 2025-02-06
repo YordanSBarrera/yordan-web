@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import ProjectGridCard from "./ProjectGridCard";
 import medisproutImg from "../../assets/img/calendarMedisprout.webp";
 import ecomerceImg from "../../assets/img/project-eCommerce500x320.webp";
+import usersList from "../../assets/img/usersList.webp";
 
 const Projects = () => {
   const { t } = useTranslation();
@@ -19,9 +20,6 @@ const Projects = () => {
           imgSrc={medisproutImg}
           imgAlt={t("medisproutAppImg")}
           projectDescription={t("medisproutDetail")}
-          buttonAction={() => {
-            console.log("ver mas");
-          }}
         />
         <ProjectGridCard
           cardName={t("ecomerce")}
@@ -30,19 +28,16 @@ const Projects = () => {
           projectDescription={t("coreanHouseDetail")}
         />
         <ProjectGridCard
-          cardName={t("medisprout")}
-          imgSrc={medisproutImg}
-          imgAlt={t("medisproutAppImg")}
-          projectDescription={t("medisproutDetail")}
+          cardName={t("usersList")}
+          imgSrc={usersList}
+          imgAlt={t("usersList")}
+          projectDescription={t("usersListDetails")}
         />
         <ProjectGridCard
           cardName={t("medisprout")}
           imgSrc={medisproutImg}
           imgAlt={t("medisproutAppImg")}
           projectDescription={t("medisproutDetail")}
-          buttonAction={() => {
-            console.log("ver mas");
-          }}
         />
       </Grid>
     </Box>
