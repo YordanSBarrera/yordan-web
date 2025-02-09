@@ -1,23 +1,40 @@
 import { Stack, Typography } from "@mui/material";
 import CardTransparent from "./CardTransparent";
 
-import git from "../assets/icons/git.svg";
-import github from "../assets/icons/github.svg";
-import bootstrap from "../assets/icons/bootstrap-oreja.svg";
-import css from "../assets/icons/css.svg";
-import html5 from "../assets/icons/html5.svg";
-import js from "../assets/icons/javascript.svg";
-import react from "../assets/icons/reaccionar.svg";
-import vsc from "../assets/icons/vsc2019.svg";
-import vite from "../assets/icons/vite.svg";
-import ts from "../assets/icons/ts.svg";
-import mongo from "../assets/icons/mongodb.svg";
-import mui from "../assets/icons/material-ui.svg";
-import angular from "../assets/icons/angular.svg";
-import emailW from "../assets/icons/email-white.svg";
-import githubW from "../assets/icons/github-white.svg";
-import linkedinW from "../assets/icons/linkedin-white.svg";
+import git from "../assets/icons/1/git.svg";
+import github from "../assets/icons/1/github.svg";
+import bootstrap from "../assets/icons/1/bootstrap-oreja.svg";
+import css from "../assets/icons/1/css.svg";
+import html5 from "../assets/icons/1/html5.svg";
+import js from "../assets/icons/1/javascript.svg";
+import react from "../assets/icons/1/reaccionar.svg";
+import vsc from "../assets/icons/1/vsc2019.svg";
+import vite from "../assets/icons/1/vite.svg";
+import ts from "../assets/icons/1/ts.svg";
+import mongo from "../assets/icons/1/mongodb.svg";
+import mui from "../assets/icons/1/material-ui.svg";
+import angular from "../assets/icons/1/angular.svg";
+import emailW from "../assets/icons/1/email-white.svg";
+import githubW from "../assets/icons/1/github-white.svg";
+import linkedinW from "../assets/icons/1/linkedin-white.svg";
 import { useTranslation } from "react-i18next";
+
+import gitNew from "../assets/icons/git.svg";
+import gitHubDark from "../assets/icons/Github_dark.svg";
+import gitHubLigth from "../assets/icons/Github_light.svg";
+import mongoDb from "../assets/icons/mongodb.svg";
+import npm from "../assets/icons/npm.svg";
+import yarn from "../assets/icons/yarn.svg";
+import pnpmDark from "../assets/icons/Pnpm_dark.svg";
+import pnpmLigth from "../assets/icons/Pnpm_light.svg";
+import next from "../assets/icons/nextjs_icon_dark.svg";
+import postman from "../assets/icons/postman.svg";
+import javascript from "../assets/icons/javascript.svg";
+import json from "../assets/icons/json-schema.svg";
+import reactQuery from "../assets/icons/reactquery.svg";
+import reactRouter from "../assets/icons/reactrouter.svg";
+import materialUI from "../assets/icons/materialui.svg";
+import linkedin from "../assets/icons/linkedin.svg";
 
 const Skills = () => {
   const { t } = useTranslation();
@@ -47,10 +64,16 @@ const Skills = () => {
             <img src={js} alt="js" />
             <img src={ts} alt="typescript" />
             <img src={react} alt="react" />
-            <img src={mui} alt="Material UI" height="38px" />
+            <img
+              src={materialUI}
+              alt="material UI"
+              height="40px"
+              width="40px"
+            />
             <img src={bootstrap} alt="bootstrap" />
-            <img src={vite} alt="vite" height="40px" />
+            <img src={vite} alt="Vite" height="40px" />
             <img src={angular} alt="Angular" height="43px" />
+            <img src={next} alt="Next" height="40px" />
           </Stack>
         </CardTransparent>
         <CardTransparent title={t("others")}>
@@ -62,12 +85,18 @@ const Skills = () => {
             flexWrap="wrap"
           >
             <img src={vsc} alt="vsc" />
-            <img src={git} alt="git" />
             <img src={github} alt="github" />
-            <img src={mongo} alt="MongoDB" />
-            <img src={emailW} alt="js" height="35px" />
-            <img src={linkedinW} alt="js" height="30px" />
-            <img src={githubW} alt="js" height="55px" />
+            {/* NUEVOS ICONS */}
+            <img src={gitNew} alt="gitNew" height="40px" width="40px" />
+            <img src={mongoDb} alt="mongoDb" height="40px" />
+            <img src={postman} alt="postman" height="40px" width="40px" />
+            <img src={npm} alt="npm" height="40px" width="40px" />
+            <img src={yarn} alt="yarn" height="40px" width="40px" />
+            <img src={pnpmLigth} alt="pnpmLigth" height="35px" width="35px" />
+            <img src={json} alt="git" height="40px" width="40px" />
+            <img src={reactQuery} alt="git" height="40px" width="40px" />
+            <img src={reactRouter} alt="git" height="40px" width="40px" />
+            <img src={linkedin} alt="linkedin" height="35px" width="35px" />
           </Stack>
         </CardTransparent>
       </Stack>

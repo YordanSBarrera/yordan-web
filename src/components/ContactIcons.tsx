@@ -1,7 +1,7 @@
 import { Box, Link, Stack, StackProps } from "@mui/material";
-import emailW from "../assets/icons/email-2.svg";
-import githubW from "../assets/icons/github-2.svg";
-import linkedinW from "../assets/icons/linkedin-2.svg";
+import emailW from "../assets/icons/1/email-2.svg";
+import githubW from "../assets/icons/1/github-2.svg";
+import linkedinW from "../assets/icons/1/linkedin-2.svg";
 
 type ContactIconsProps = StackProps & {
   heightProps?: string;
