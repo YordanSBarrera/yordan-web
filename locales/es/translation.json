@@ -22,5 +22,8 @@
   "coreanHouseDetail": "Una web de Comercio Electrónico desarrollado con React, Redux",
   "others": "Otras",
   "usersList": "Lista de Usuarios",
-  "usersListDetails": "[App de estudio]. Consumiendo de una API, jugando con la información resultante."
+  "usersListDetails": "[App de estudio]. Consumiendo de una API, jugando con la información resultante.",
+  "dashboard": "Panel Financiero",
+  "dashboardAppImg": "Dashboard App Img",
+  "dashboardDetail": "Es un Panel Financiero creado con Next.js que contiene; una página de inicio pública. Una página de inicio de sesión. Páginas del panel protegidas por autenticación. La capacidad de los usuarios para agregar, editar y eliminar facturas. Ademas incluye una Base de Datos hostiada en Vercel"
 }
