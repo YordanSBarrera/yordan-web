@@ -6,6 +6,7 @@ import medisproutImg from "../../assets/img/calendarMedisprout.webp";
 import ecomerceImg from "../../assets/img/project-eCommerce500x320.webp";
 import usersList from "../../assets/img/usersList.webp";
 import dashboard from "../../assets/img/dashboard.webp";
+import myAppCodesigalImg from "../../assets/img/myCodeSignal.webp";
 
 const Projects = () => {
   const { t } = useTranslation();
@@ -39,6 +40,12 @@ const Projects = () => {
           imgSrc={dashboard}
           imgAlt={t("dashboardAppImg")}
           projectDescription={t("dashboardDetail")}
+        />
+        <ProjectGridCard
+          cardName={t("myAppCodeSignal")}
+          imgSrc={myAppCodesigalImg}
+          imgAlt={t("myAppCodeSignal")}
+          projectDescription={t("myAppCodeSignalDetail")}
         />
       </Grid>
     </Box>

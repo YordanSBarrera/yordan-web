@@ -25,5 +25,7 @@
   "usersListDetails": "[App de estudio]. Consumiendo de una API, jugando con la información resultante.",
   "dashboard": "Panel Financiero",
   "dashboardAppImg": "Dashboard App Img",
-  "dashboardDetail": "Es un Panel Financiero creado con Next.js que contiene; una página de inicio pública. Una página de inicio de sesión. Páginas del panel protegidas por autenticación. La capacidad de los usuarios para agregar, editar y eliminar facturas. Ademas incluye una Base de Datos hostiada en Vercel"
+  "dashboardDetail": "Es un Panel Financiero creado con Next.js que contiene; una página de inicio pública. Una página de inicio de sesión. Páginas del panel protegidas por autenticación. La capacidad de los usuarios para agregar, editar y eliminar facturas. Ademas incluye una Base de Datos hostiada en Vercel",
+  "myAppCodeSignalDetail": "Una App de y para estudio. Incluye los ejercicios desarrollador en el sitio de estudio CODESIGNAL",
+  "myAppCodeSignal": "Mi App CodeSignal"
 }
