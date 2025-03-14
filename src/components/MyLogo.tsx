@@ -7,13 +7,14 @@ type MyLogoProps = {
   widthProps?: string;
   linkTo?: string;
 };
+
 const MyLogo = ({ widthProps = "150px", linkTo = homeRoute }: MyLogoProps) => {
   return (
-    <Box>
-      <NavLink to={linkTo}>
+    <NavLink to={linkTo}>
+      <Box component="span">
         <img src={myLogo} alt="YSB logo" width={widthProps} />
-      </NavLink>
-    </Box>
+      </Box>
+    </NavLink>
   );
 };
 

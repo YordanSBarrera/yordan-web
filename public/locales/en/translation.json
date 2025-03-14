@@ -24,7 +24,7 @@
   "others": "Others",
   "usersList": "List of Users",
   "usersListDetails": "[Study App]. Consuming from an API, playing with the resulting information.",
-  "dashboard": "PFinancial Dashboard",
+  "dashboard": "Financial Dashboard",
   "dashboardAppImg": "Dashboard App Img",
   "dashboardDetail": "It is a Financial Dashboard created with Next.js that contains; a public home page. A login page. Dashboard pages protected by authentication. The ability for users to add, edit and delete invoices. It also includes a Database hosted in Vercel.",
   "myAppCodeSignalDetail": "An App for studying. Includes developer exercises on the CODESIGNAL study site",
