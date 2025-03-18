@@ -1,11 +1,10 @@
 import { bgTransparenCard } from "../utils/const";
 import NameAnimation from "./NameAnimation";
 import FigureAnimation from "./FigureAnimation";
-import { Stack, Typography, Box, styled } from "@mui/material";
+import { Stack, Typography, Box, styled, Grid } from "@mui/material";
 import { useTranslation } from "react-i18next";
-import Grid2 from "@mui/material/Grid2";
 
-const AnimatedGrid = styled(Grid2)`
+const AnimatedGrid = styled(Grid)`
   animation: slideIn 0.8s ease-out forwards;
   opacity: 0;
   
@@ -41,11 +40,11 @@ const Welcome = () => {
   const { t } = useTranslation();
   
   return (
-    <Grid2 container spacing={3}>
-      <AnimatedGrid
+    <Grid container spacing={3}>
+      <AnimatedGrid 
         item
-        xs={12}
-        md={6}
+        xs={12} 
+        md={6} 
         xl={7}
         sx={{
           textAlign: "center",
@@ -77,7 +76,7 @@ const Welcome = () => {
           </AnimatedDescription>
         </Stack>
       </AnimatedGrid>
-      <Grid2 item xs={12} md={6} xl={5}>
+      <Grid item xs={12} md={6} xl={5}>
         <Box
           sx={{
             transform: { xs: "scale(0.9)", sm: "scale(1)" },
@@ -87,8 +86,8 @@ const Welcome = () => {
         >
           <FigureAnimation />
         </Box>
-      </Grid2>
-    </Grid2>
+      </Grid>
+    </Grid>
   );
 };
 
